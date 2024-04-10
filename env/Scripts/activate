@@ -39,10 +39,10 @@ deactivate nondestructive
 if [ "${OSTYPE:-}" = "cygwin" ] || [ "${OSTYPE:-}" = "msys" ] ; then
     # transform D:\path\to\venv to /d/path/to/venv on MSYS
     # and to /cygdrive/d/path/to/venv on Cygwin
-    export VIRTUAL_ENV=$(cygpath "C:\Users\zegih\Desktop\All\Project\fastapi-mysql\env")
+    export VIRTUAL_ENV=$(cygpath "C:\All\Coding\Project\learn_fastAPI_with_mySQL\env")
 else
     # use the path as-is
-    export VIRTUAL_ENV="C:\Users\zegih\Desktop\All\Project\fastapi-mysql\env"
+    export VIRTUAL_ENV="C:\All\Coding\Project\learn_fastAPI_with_mySQL\env"
 fi
 
 _OLD_VIRTUAL_PATH="$PATH"
